@@ -1,0 +1,53 @@
+title: Today I Learned
+about: sinchang/til
+about_url: https://github.com/sinchang/til
+databases:
+  til:
+    queries:
+      search: |
+        select
+          til_fts.rank,
+          til.*,
+          snippet(til_fts, -1, 'b4de2a49c8', '8c94a2ed4b', '...', 60) as snippet
+        from
+          til
+          join til_fts on til.rowid = til_fts.rowid
+        where
+          til_fts match case
+            :q
+            when '' then '*'
+            else escape_fts(:q)
+          end
+        order by
+          til_fts.rank limit 20
+    tables:
+      til:
+        sort_desc: updated_utc
+        facets:
+        - topic
+        plugins:
+          datasette-render-markdown:
+            columns:
+            - body
+            extra_tags:
+            - img
+            - hr
+            - br
+            - details
+            - summary
+            - input
+            - div
+            - span
+            extra_attrs:
+              input:
+              - type
+              - disabled
+              - checked
+              img:
+              - src
+              div:
+              - class
+              span:
+              - class
+            extensions:
+            - mdx_gfm:GithubFlavoredMarkdownExtension
