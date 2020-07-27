@@ -1,3 +1,5 @@
+# Deleting Multiple Branches in Git
+
 To delete many branches based on a specified pattern do the following:
 
 1. Open the terminal, or equivalent.
