@@ -11,5 +11,5 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 
 ## php
 
-* [It was tested on the PHP 7.4.13](https://github.com/sinchang/til/blob/master/php/install-php-redis-extension.md) - 2020-12-02
+* [Install php redis extension](https://github.com/sinchang/til/blob/master/php/install-php-redis-extension.md) - 2020-12-02
 <!-- index ends -->
