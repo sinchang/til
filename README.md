@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->4<!-- count ends --> TILs so far.
+<!-- count starts -->5<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -17,4 +17,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## macos
 
 * [How to reset the SMC of your Mac](https://github.com/sinchang/til/blob/master/macos/reset-smc.md) - 2021-03-02
+
+## go
+
+* [Install Go on Mac (with homebrew)](https://github.com/sinchang/til/blob/master/go/install-go-on-mac.md) - 2021-03-07
 <!-- index ends -->
