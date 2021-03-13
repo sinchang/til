@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->5<!-- count ends --> TILs so far.
+<!-- count starts -->6<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -21,4 +21,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## go
 
 * [Install Go on Mac (with homebrew)](https://github.com/sinchang/til/blob/master/go/install-go-on-mac.md) - 2021-03-07
+
+## shell
+
+* [Rename the extension of multiple files](https://github.com/sinchang/til/blob/master/shell/rename-the-extension-of-multiple-files.md) - 2021-03-13
 <!-- index ends -->
