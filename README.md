@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->6<!-- count ends --> TILs so far.
+<!-- count starts -->7<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -25,4 +25,5 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## bash
 
 * [Rename the extension of multiple files](https://github.com/sinchang/til/blob/master/bash/rename-the-extension-of-multiple-files.md) - 2021-03-14
+* [Find total size of files matching a wild card](https://github.com/sinchang/til/blob/master/bash/find-total-size-of-files-matching-a-wild-card.md) - 2021-03-24
 <!-- index ends -->
