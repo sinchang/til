@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->8<!-- count ends --> TILs so far.
+<!-- count starts -->9<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -30,4 +30,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## lerna
 
 * [Lerna publish only specific package](https://github.com/sinchang/til/blob/master/lerna/lerna-publish-only-specific-package.md) - 2021-05-21
+
+## github
+
+* [Push code with GitHub token](https://github.com/sinchang/til/blob/master/github/push-with-token.md) - 2021-05-21
 <!-- index ends -->
