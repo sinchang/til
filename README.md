@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->9<!-- count ends --> TILs so far.
+<!-- count starts -->10<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -34,4 +34,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## github
 
 * [Push code with GitHub token](https://github.com/sinchang/til/blob/master/github/push-with-token.md) - 2021-05-21
+
+## css
+
+* [Fix disabled input background is faded on iOS](https://github.com/sinchang/til/blob/master/css/disabled-input-bg-issue.md) - 2021-05-28
 <!-- index ends -->
