@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->10<!-- count ends --> TILs so far.
+<!-- count starts -->9<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -13,10 +13,6 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## php
 
 * [Install php redis extension](https://github.com/sinchang/til/blob/master/php/install-php-redis-extension.md) - 2020-12-02
-
-## macos
-
-* [How to reset the SMC of your Mac](https://github.com/sinchang/til/blob/master/macos/reset-smc.md) - 2021-03-02
 
 ## go
 
