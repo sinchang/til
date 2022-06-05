@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->9<!-- count ends --> TILs so far.
+<!-- count starts -->10<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -30,6 +30,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## github
 
 * [Push code with GitHub token](https://github.com/sinchang/til/blob/master/github/push-with-token.md) - 2021-05-21
+* [How to force image update on GitHub](https://github.com/sinchang/til/blob/master/github/remove-image-cache.md) - 2022-06-05
 
 ## css
 
