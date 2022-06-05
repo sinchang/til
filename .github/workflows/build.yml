@@ -20,7 +20,6 @@ jobs:
       with:
         repository: sinchang/til-db
         path: til-db
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN_FOR_PUSH }}
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
