@@ -3,7 +3,6 @@ import git
 import pathlib
 import sqlite_utils
 
-
 root = pathlib.Path(__file__).parent.resolve()
 
 
@@ -38,18 +37,25 @@ def build_database(repo_path):
         title = fp.readline().lstrip("#").strip()
         body = fp.read().strip()
         path = str(filepath.relative_to(root))
+        slug = filepath.stem
         url = "https://github.com/sinchang/til/blob/master/{}".format(path)
+        # Do we need to render the markdown?
+        path_slug = path.replace("/", "_")
         record = {
-            "path": path.replace("/", "_"),
+            "path": path_slug,
+            "slug": slug,
             "topic": path.split("/")[0],
             "title": title,
             "url": url,
             "body": body,
         }
         record.update(all_times[path])
-        table.insert(record)
-    if "til_fts" not in db.table_names():
-        table.enable_fts(["title", "body"])
+        with db.conn:
+            table.upsert(record, alter=True)
+
+    table.enable_fts(
+        ["title", "body"], tokenize="porter", create_triggers=True, replace=True
+    )
 
 
 if __name__ == "__main__":
