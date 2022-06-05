@@ -34,13 +34,13 @@ databases:
         title: Simon Willison TIL
         sql: |-
           SELECT
-            'tag:til.simonwillison.net,2020-04-30:' || path as atom_id,
+            'tag:til.sinchang.me,2020-04-30:' || path as atom_id,
             title as atom_title,
-            'https://til.simonwillison.net/' || topic || '/' || slug as atom_link,
+            'https://til.sinchang.me/' || topic || '/' || slug as atom_link,
             created_utc as atom_updated,
             html as atom_content_html,
             'Simon Willison' as atom_author_name,
-            'https://simonwillison.net/' as atom_author_uri
+            'https://sinchang.me/' as atom_author_uri
           FROM
             til
           order by
