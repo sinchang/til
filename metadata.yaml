@@ -1,18 +1,8 @@
 title: Today I Learned
 about: sinchang/til
 about_url: https://github.com/sinchang/til
-plugins:
-  datasette-atom:
-    allow_unsafe_html_in_canned_queries: true
-  datasette-media:
-    screenshot:
-      "sql": "select shot as content, 'image/png' as content_type from til where path=:key"
-  datasette-block-robots:
-    literal: |-
-      User-agent: *
-      Disallow: /tils
 databases:
-  tils:
+  til:
     queries:
       search: |
         select
@@ -25,30 +15,39 @@ databases:
         where
           til_fts match case
             :q
-            when '' then 'nomatchforthisterm'
+            when '' then '*'
             else escape_fts(:q)
           end
         order by
           til_fts.rank limit 20
-      feed:
-        title: Simon Willison TIL
-        sql: |-
-          SELECT
-            'tag:til.sinchang.me,2020-04-30:' || path as atom_id,
-            title as atom_title,
-            'https://til.sinchang.me/' || topic || '/' || slug as atom_link,
-            created_utc as atom_updated,
-            html as atom_content_html,
-            'Simon Willison' as atom_author_name,
-            'https://sinchang.me/' as atom_author_uri
-          FROM
-            til
-          order by
-            created_utc desc
-          limit
-            15
     tables:
       til:
         sort_desc: updated_utc
         facets:
-        - topic
+          - topic
+        plugins:
+          datasette-render-markdown:
+            columns:
+              - body
+            extra_tags:
+              - img
+              - hr
+              - br
+              - details
+              - summary
+              - input
+              - div
+              - span
+            extra_attrs:
+              input:
+                - type
+                - disabled
+                - checked
+              img:
+                - src
+              div:
+                - class
+              span:
+                - class
+            extensions:
+              - mdx_gfm:GithubFlavoredMarkdownExtension

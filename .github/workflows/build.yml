@@ -4,6 +4,8 @@ on:
   push:
     branches:
     - master
+  workflow_dispatch:
+    inputs:
 
 jobs:
   build:
@@ -13,13 +15,7 @@ jobs:
       uses: actions/checkout@v2
       # We need full history to introspect created/updated:
       with:
-        fetch-depth: 0
-        path: master
-    - name: Checkout til-db
-      uses: actions/checkout@v2
-      with:
-        repository: sinchang/til-db
-        path: til-db
+        fetch-depth: 0  
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -31,71 +27,42 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-
-        restore-keys: |
-          ${{ runner.os }}-node-
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r master/requirements.txt
-    - name: Install npm dependencies
-      run: sudo npm install -g puppeteer-cli --unsafe-perm=true
-    - name: Download previous database unless REBUILD in commit message
-      if: |-
-        !contains(github.event.head_commit.message, 'REBUILD')
-      run: curl --fail -o master/tils.db https://raw.githubusercontent.com/sinchang/til-db/master/tils.db
-      continue-on-error: true
+        pip install -r requirements.txt
     - name: Build database
-      run: |-
-        cd master
-        python build_database.py
+      run: python build_database.py
     - name: Update README
       run: |-
-        cd master
         python update_readme.py --rewrite
         cat README.md
     - name: Commit and push if README changed
       run: |-
-        cd master
         git diff
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "README-bot"
+        git config --global user.email "sinchangwen@gmail.com"
+        git config --global user.name "sinchang"
         git diff --quiet || (git add README.md && git commit -m "Updated README")
         git push
-    - name: Save tils.db to sinchang/til-db
-      run: |-
-        cd til-db
-        cp ../master/tils.db .
-        git add tils.db
-        git commit --amend --no-edit
-        git push --force
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
     - name: Deploy Datasette using Vercel
       env:
-        NOW_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       run: |-
-        cd master
-        wget https://latest.datasette.io/fixtures.db
-        datasette publish vercel tils.db fixtures.db \
+        datasette publish now til.db \
           --token $VERCEL_TOKEN \
+          --branch master \
           --project sinchang-til \
-          --scope datasette \
           --metadata metadata.yaml \
-          --static static:static \
+          --install py-gfm \
+          --install datasette-render-markdown \
           --install datasette-template-sql \
-          --install "datasette-atom>=0.7" \
+          --install datasette-atom~=0.6 \
           --install datasette-json-html \
           --install beautifulsoup4 \
-          --install "datasette-debug-asgi>=1.1" \
-          --install "datasette-graphql>=0.12" \
-          --install datasette-media \
-          --install datasette-block-robots \
           --plugins-dir plugins \
           --template-dir templates \
           --public
