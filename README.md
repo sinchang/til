@@ -2,13 +2,14 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->10<!-- count ends --> TILs so far.
+<!-- count starts -->11<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
 
 * [Deleting Multiple Branches in Git](https://github.com/sinchang/til/blob/master/git/deleteing-multiple-branches.md) - 2020-07-27
 * [Fix case-sensitive git in Mac OS X](https://github.com/sinchang/til/blob/master/git/case-sensitive-git-in-macos.md) - 2021-02-23
+* [How To Delete Local and Remote Tags on Git](https://github.com/sinchang/til/blob/master/git/delete-local-and-remote-tags.md) - 2022-06-07
 
 ## php
 
