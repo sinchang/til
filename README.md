@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->12<!-- count ends --> TILs so far.
+<!-- count starts -->13<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -37,4 +37,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## css
 
 * [Fix disabled input background is faded on iOS](https://github.com/sinchang/til/blob/master/css/disabled-input-bg-issue.md) - 2021-05-28
+
+## chrome
+
+* [How to Fix the NET::ERR_CERT_INVALID Error?](https://github.com/sinchang/til/blob/master/chrome/cert-invalid-error.md) - 2022-07-19
 <!-- index ends -->
