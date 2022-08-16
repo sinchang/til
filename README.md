@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->13<!-- count ends --> TILs so far.
+<!-- count starts -->14<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -41,4 +41,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## chrome
 
 * [How to Fix the NET::ERR_CERT_INVALID Error?](https://github.com/sinchang/til/blob/master/chrome/cert-invalid-error.md) - 2022-07-19
+
+## vscode
+
+* [Collapse all methods in Visual Studio Code](https://github.com/sinchang/til/blob/master/vscode/collapse-all-methods.md) - 2022-08-16
 <!-- index ends -->
