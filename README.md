@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->14<!-- count ends --> TILs so far.
+<!-- count starts -->15<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -45,4 +45,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## vscode
 
 * [Collapse all methods in Visual Studio Code](https://github.com/sinchang/til/blob/master/vscode/collapse-all-methods.md) - 2022-08-16
+
+## typescript
+
+* [Accept any string, but suggest some specific values on autocomplete](https://github.com/sinchang/til/blob/master/typescript/string-with-auto-complete.md) - 2022-08-26
 <!-- index ends -->
