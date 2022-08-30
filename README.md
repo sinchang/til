@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->15<!-- count ends --> TILs so far.
+<!-- count starts -->16<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -49,4 +49,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## typescript
 
 * [Accept any string, but suggest some specific values on autocomplete](https://github.com/sinchang/til/blob/master/typescript/string-with-auto-complete.md) - 2022-08-26
+
+## redis
+
+* [Remove all matching keys from redis](https://github.com/sinchang/til/blob/master/redis/remove-all-matching-keys.md) - 2022-08-30
 <!-- index ends -->
