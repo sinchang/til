@@ -2,6 +2,6 @@
 
 - Right click, select inspect element
 - Click on console tab
-- Copy paste sendCommand(SecurityInterstitialCommandId.CMD_PROCEED) press Enter
+- Copy paste `sendCommand(SecurityInterstitialCommandId.CMD_PROCEED)` press Enter
 
 ref: https://stackoverflow.com/a/63186558
