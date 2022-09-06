@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->16<!-- count ends --> TILs so far.
+<!-- count starts -->17<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -53,4 +53,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## redis
 
 * [Remove all matching keys from redis](https://github.com/sinchang/til/blob/master/redis/remove-all-matching-keys.md) - 2022-08-30
+
+## react
+
+* [[react-transition-group] Warning: findDOMNode is deprecated in StrictMode.](https://github.com/sinchang/til/blob/master/react/findDOMNode-warning.md) - 2022-09-06
 <!-- index ends -->
