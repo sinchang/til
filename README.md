@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->17<!-- count ends --> TILs so far.
+<!-- count starts -->18<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -37,6 +37,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## css
 
 * [Fix disabled input background is faded on iOS](https://github.com/sinchang/til/blob/master/css/disabled-input-bg-issue.md) - 2021-05-28
+* [Remove hover styles on tap on mobile devices](https://github.com/sinchang/til/blob/master/css/remove-hover-style-on-tap-on-mobile-device.md) - 2022-09-09
 
 ## chrome
 
