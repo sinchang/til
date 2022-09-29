@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->18<!-- count ends --> TILs so far.
+<!-- count starts -->19<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -58,4 +58,8 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## react
 
 * [[react-transition-group] Warning: findDOMNode is deprecated in StrictMode.](https://github.com/sinchang/til/blob/master/react/findDOMNode-warning.md) - 2022-09-06
+
+## javascript
+
+* [Detect if page is load from back button](https://github.com/sinchang/til/blob/master/javascript/detect-if-page-is-load-from-back-button.md) - 2022-09-29
 <!-- index ends -->
