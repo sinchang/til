@@ -2,7 +2,7 @@
 
 My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/til).
 
-<!-- count starts -->20<!-- count ends --> TILs so far.
+<!-- count starts -->21<!-- count ends --> TILs so far.
 
 <!-- index starts -->
 ## git
@@ -62,6 +62,7 @@ My Today I Learned snippets. Inspired by [simonw/til](https://github.com/simonw/
 ## javascript
 
 * [Detect if page is load from back button](https://github.com/sinchang/til/blob/master/javascript/detect-if-page-is-load-from-back-button.md) - 2022-09-29
+* [Var, Let, and Const – What's the Difference?](https://github.com/sinchang/til/blob/master/javascript/var-let-const.md) - 2022-10-31
 
 ## storybook
 
